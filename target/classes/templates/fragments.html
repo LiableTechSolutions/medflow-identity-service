@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<header th:fragment="nav"><nav><a href="/dashboard">MedFlow</a><span><a href="/profile">Profile</a><a href="/admin">Admin</a><form action="/logout" method="post"><input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"><button type="submit">Log out</button></form></span></nav></header>
+<footer th:fragment="footer"><small>MedFlow Authentication Service</small></footer>
+</body>
+</html>
